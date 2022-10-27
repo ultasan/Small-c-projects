@@ -1,18 +1,30 @@
 # include <stdio.h>
-# include <string.h>
+
+int reverse(char* p){
+	int i;
+	char *t;
+	t = p;
+	while(*p != '\0'){
+		printf("%c", *p);
+		*p++;
+};
+	printf("\n");
+
+	while(p != t-1){
+		printf("%c",*p);
+		*p--;
+};
+
+	printf("\n");
+
+};
+
 
 int main(){
-	int i;
-	char word[i];
-	printf("What word would you like reversed?\n");
-	scanf("%s",word);
-	i = strlen(word);
-	if(i>10){
-		printf("your word is too long!\n");
-		return 0;
-}
-	for(i;i>0;i--){
-		printf("%c",word[i-1]);
-		
-}
+	char arr[20] = "Sanjeev";
+	char *p = arr;
+	reverse(p);
+	
+	
+	
 }
