@@ -21,8 +21,8 @@ int main(){
     }
     for(i=0;i<n;i++){
         for(j=i;j<n;j++){
-            xtemp = (xcor[i]-xcor[j])*(xcor[i]-xcor[j]);
-            ytemp = (ycor[i] - ycor[j])*(ycor[i]-ycor[j]);
+            xtemp = (xcor[i]-xcor[j+1])*(xcor[i]-xcor[j+1]);
+            ytemp = (ycor[i] - ycor[j+1])*(ycor[i]-ycor[j+1]);
             if(max< abs(xtemp+ytemp)){
                 max = xtemp + ytemp;
             }
